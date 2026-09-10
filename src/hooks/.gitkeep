@@ -1,0 +1,10 @@
+/**
+ * Custom hooks directory
+ *
+ * Place reusable React hooks here as the project grows.
+ *
+ * Examples:
+ *   useScrollProgress.ts   — wrapper around Framer's useScroll
+ *   useMediaQuery.ts       — responsive breakpoint hook
+ *   useAnalytics.ts        — analytics event tracking
+ */
