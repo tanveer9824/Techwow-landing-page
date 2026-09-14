@@ -1,5 +1,4 @@
-import React from 'react';
-import bgImg from '@/assets/card-man-watch.jpg';
+import bgImg from '@/assets/tech-hero-bg.jpg';
 import appleBtn from '@/assets/apple-button.webp';
 import playstoreBtn from '@/assets/playstore-button.webp';
 import Footer from '@/components/Footer';
@@ -25,10 +24,10 @@ export default function FooterCTA() {
           {/* Content */}
           <div style={{ position: 'relative', zIndex: 10, maxWidth: '580px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', fontWeight: 600, letterSpacing: '-0.025em', color: '#ffffff', marginBottom: '14px', lineHeight: 1.15 }}>
-              Be the First to Conquer
+              Buy, Sell, Repair, or Protect Today
             </h2>
             <p style={{ fontSize: '0.92rem', color: 'rgba(255,255,255,0.82)', marginBottom: '30px', lineHeight: 1.55, maxWidth: '440px' }}>
-              Sign up today for early access, exclusive drops, and first dibs on founding-player rewards.
+              Experience transparent upfront repair pricing, instant AI trade-in valuations, and company-owned UK workshops with Techwow.
             </p>
             
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '14px' }}>

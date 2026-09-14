@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Branding & Social Side */}
         <div
           className="footer-brand-col"
-          style={{ display: 'flex', flexDirection: 'column', gap: '14px', maxWidth: '300px' }}
+          style={{ display: 'flex', flexDirection: 'column', gap: '14px', maxWidth: '340px' }}
         >
           <Link
             to="/"
@@ -111,7 +111,7 @@ export default function Footer() {
           >
             <img
               src={blueLogo}
-              alt="Conquer Circles Logo"
+              alt="Techwow Logo"
               style={{ width: '26px', height: '26px', objectFit: 'contain', display: 'block' }}
             />
             <span
@@ -122,13 +122,15 @@ export default function Footer() {
                 letterSpacing: '-0.02em',
               }}
             >
-              Conquer Circles
+              Techwow®
             </span>
           </Link>
           <p style={{ color: '#777', fontSize: '0.85rem', lineHeight: 1.6, margin: 0 }}>
-            Walk. Claim. Conquer.
+            Buy — Sell — Repair — Protect
             <br />
-            Turn every walk into territory.
+            TECHWOW LTD · Registered in England & Wales #13962308
+            <br />
+            05 Leicester Steet, Northwich, England, CW9 5LA
           </p>
           <div style={{ display: 'flex', gap: '16px', marginTop: '6px' }}>
             {/* Instagram */}

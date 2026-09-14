@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import img1 from '@/assets/real_players_1.png';
-import img2 from '@/assets/real_players_2.jpg';
-import img3 from '@/assets/real_players_3.jpg';
+import img1 from '@/assets/tech-ai-scan.jpg';
+import img2 from '@/assets/tech-repair-hands.jpg';
+import img3 from '@/assets/tech-prepaid-box.jpg';
 
 const cards = [
   {
     id: '01',
-    badge: 'Start Conquering',
-    heading: 'Your Next Walk Is a Territory Grab',
-    description: 'Conquer Circles turns the streets you already walk into a live map you control. No gym, no equipment — just steps and strategy.',
+    badge: 'Buy Back',
+    heading: 'Instant AI Valuation in Seconds',
+    description: 'Our 6-step guided camera scan analyses display, glass, frame, and ports before you commit. Choose Instant Payment (-£10 fee) or full regular payout upon verification.',
     image: img1,
   },
   {
     id: '02',
-    badge: 'Defend Your Turf',
-    heading: 'Hold Your Ground Against Rivals',
-    description: 'Protect the areas you\'ve claimed before someone else takes them.',
+    badge: 'Repair',
+    heading: 'Fixed Pricing & Direct Technician Chat',
+    description: 'Screen repair £89, battery £49, charging port £39. Track live across 6 milestones and chat directly with the technician holding your device.',
     image: img2,
   },
   {
     id: '03',
-    badge: 'Join the Ranks',
-    heading: 'Build Your Legacy',
-    description: 'Compete globally and locally on the leaderboard.',
+    badge: 'Store & Protect',
+    heading: 'Accessories & 10% Repair Bundle',
+    description: 'Original chargers, cases, and audio. Customers booking a repair receive an automatic 10% bundle discount on all accessories at checkout.',
     image: img3,
   }
 ];
@@ -55,7 +55,7 @@ export default function RealPlayers() {
             fontFamily: 'Inter, system-ui, sans-serif',
           }}
         >
-          Real players, Real streets
+          Transparent pricing, genuine accountability
         </h2>
 
         {/* Cards Container */}

@@ -11,9 +11,9 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { TrendingUp } from 'lucide-react'
 
-import cardManWatch from '@/assets/card-man-watch.jpg'
-import cardWomanWater from '@/assets/card-woman-water.jpg'
-import cardRunningLegs from '@/assets/card-running-legs.jpg'
+import cardManWatch from '@/assets/tech-ai-scan.jpg'
+import cardWomanWater from '@/assets/tech-prepaid-box.jpg'
+import cardRunningLegs from '@/assets/tech-hero-bg.jpg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 35 },
@@ -83,7 +83,7 @@ export default function HowItWorks() {
             marginBottom: '1.25rem',
           }}
         >
-          Walk More. Own More.
+          Book With Us. Accountable End to End.
         </h2>
 
         {/* Subtitle */}
@@ -96,14 +96,14 @@ export default function HowItWorks() {
             margin: '0 auto',
           }}
         >
-          Every step you take claims real territory. Conquer Circles turns your daily walk
-          into a live strategy game against friends and rivals.
+          Techwow is not a marketplace. We own the workshops, employ the technicians, and fulfil
+          every repair and trade-in through one centralised UK system.
         </p>
       </motion.div>
 
       {/* ── Responsive Bento Grid ── */}
       <div className="bento-grid-container">
-        {/* Card 1: Man with smartwatch ("Every route becomes territory") */}
+        {/* Card 1: Buy Back AI Scan */}
         <motion.div
           id="card-routes"
           className="bento-card card-routes"
@@ -114,16 +114,14 @@ export default function HowItWorks() {
         >
           <img
             src={cardManWatch}
-            alt="Man in black athletic gear tying running shoe with smartwatch"
+            alt="Techwow digital device assessment"
             className="bento-card-img"
           />
           <div className="bento-card-gradient" aria-hidden="true" />
-          <h3 className="bento-card-title">
-            Every route becomes territory
-          </h3>
+          <h3 className="bento-card-title">Buy Back: Guided 6-step AI camera scan with instant condition report</h3>
         </motion.div>
 
-        {/* Card 2: Woman drinking water ("Circles turn walking into rivalry") */}
+        {/* Card 2: In-Store & Mail-in */}
         <motion.div
           id="card-rivalry"
           className="bento-card card-rivalry"
@@ -134,16 +132,14 @@ export default function HowItWorks() {
         >
           <img
             src={cardWomanWater}
-            alt="Athletic woman in sports bra drinking water under sunny sky"
+            alt="Customer booking repair"
             className="bento-card-img"
           />
           <div className="bento-card-gradient" aria-hidden="true" />
-          <h3 className="bento-card-title">
-            Circles turn walking into rivalry
-          </h3>
+          <h3 className="bento-card-title">Reserved in-store slot or prepaid secure mail-in box</h3>
         </motion.div>
 
-        {/* Card 3: Runner legs ("Watch your empire grow in real time") */}
+        {/* Card 3: Upfront Pricing */}
         <motion.div
           id="card-empire"
           className="bento-card card-empire"
@@ -154,16 +150,14 @@ export default function HowItWorks() {
         >
           <img
             src={cardRunningLegs}
-            alt="Runner legs and shoes in motion on track"
+            alt="Tech technician repair workshop"
             className="bento-card-img"
           />
           <div className="bento-card-gradient" aria-hidden="true" />
-          <h3 className="bento-card-title">
-            Watch your empire grow in real time
-          </h3>
+          <h3 className="bento-card-title">Transparent upfront repair pricing before you commit</h3>
         </motion.div>
 
-        {/* Card 4: Stat Card (75% in Blue #4C6FFF) */}
+        {/* Card 4: Stat Card (100% in Blue #4C6FFF) */}
         <motion.div
           id="card-stat"
           className="bento-card card-stat"
@@ -175,12 +169,8 @@ export default function HowItWorks() {
           <div style={{ marginBottom: '0.75rem' }}>
             <TrendingUp size={36} color="#ffffff" strokeWidth={2.5} aria-hidden="true" />
           </div>
-          <p className="bento-stat-number">
-            75%
-          </p>
-          <p className="bento-stat-label">
-            more daily steps from players in active circles
-          </p>
+          <p className="bento-stat-number">100%</p>
+          <p className="bento-stat-label">fulfilled by Techwow's own employed UK technicians — never third-party shops</p>
         </motion.div>
       </div>
 

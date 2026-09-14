@@ -14,12 +14,12 @@
 
 import { useRef } from 'react'
 import { useScroll, useTransform, motion } from 'framer-motion'
-import heroBg from '@/assets/hero-bg.jpg'
+import heroBg from '@/assets/tech-hero-bg.jpg'
 import appleBtn from '@/assets/apple-button.webp'
 import playstoreBtn from '@/assets/playstore-button.webp'
 
-// Monochromatic film grain noise texture
-const noiseSvg = `data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E`
+// High-contrast tactile film grain noise texture
+const noiseSvg = `data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E`
 
 export default function Hero() {
   const sectionRef = useRef(null)
@@ -76,14 +76,14 @@ export default function Hero() {
           {/* Background image */}
           <img
             src={heroBg}
-            alt="Woman running on a path with a city skyline in the background"
+            alt="Techwow device repair workshop bench"
             style={{
               position: 'absolute',
               inset: 0,
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              objectPosition: '63% top',
+              objectPosition: 'center',
             }}
           />
 
@@ -94,9 +94,10 @@ export default function Hero() {
               inset: 0,
               backgroundImage: `url("${noiseSvg}")`,
               backgroundRepeat: 'repeat',
-              backgroundSize: '180px 180px',
-              opacity: 0.75,
+              backgroundSize: '150px 150px',
+              opacity: 0.85,
               mixBlendMode: 'overlay',
+              filter: 'contrast(170%) brightness(5%)',
             }}
           />
           <div
@@ -105,9 +106,10 @@ export default function Hero() {
               inset: 0,
               backgroundImage: `url("${noiseSvg}")`,
               backgroundRepeat: 'repeat',
-              backgroundSize: '120px 120px',
-              opacity: 0.45,
-              mixBlendMode: 'soft-light',
+              backgroundSize: '100px 100px',
+              opacity: 0.55,
+              mixBlendMode: 'hard-light',
+              filter: 'contrast(10%)',
             }}
           />
           <div
@@ -116,9 +118,10 @@ export default function Hero() {
               inset: 0,
               backgroundImage: `url("${noiseSvg}")`,
               backgroundRepeat: 'repeat',
-              backgroundSize: '80px 80px',
-              opacity: 0.2,
-              mixBlendMode: 'overlay',
+              backgroundSize: '220px 220px',
+              opacity: 0.35,
+              mixBlendMode: 'screen',
+              filter: 'contrast(30%)',
             }}
           />
         </motion.div>
@@ -168,9 +171,9 @@ export default function Hero() {
             fontFamily: 'Inter, system-ui, sans-serif',
           }}
         >
-          Walk. Claim.
+          Buy. Sell.
           <br />
-          Conquer.
+          Repair. Protect.
         </h1>
 
         {/* Subtext */}
@@ -184,7 +187,8 @@ export default function Hero() {
             fontFamily: 'Inter, system-ui, sans-serif',
           }}
         >
-          Turn every walk into territory.
+          Device repair, instant AI trade-in, and accessories. Owned and fulfilled by us across the
+          UK.
         </p>
 
         {/* App Store / Google Play badges */}
@@ -225,9 +229,27 @@ export default function Hero() {
               e.currentTarget.style.transform = 'translateY(0)'
             }}
           >
-            <img src={appleBtn} alt="" style={{ height: '34px', width: '30px', objectFit: 'contain', flexShrink: 0 }} />
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.1 }}>
-              <span style={{ fontSize: '0.65rem', opacity: 0.9, letterSpacing: '0.02em', marginBottom: '2px' }}>
+            <img
+              src={appleBtn}
+              alt=""
+              style={{ height: '34px', width: '30px', objectFit: 'contain', flexShrink: 0 }}
+            />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                lineHeight: 1.1,
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '0.65rem',
+                  opacity: 0.9,
+                  letterSpacing: '0.02em',
+                  marginBottom: '2px',
+                }}
+              >
                 Available on the
               </span>
               <span style={{ fontSize: '1.3rem', fontWeight: 600, letterSpacing: '-0.02em' }}>
@@ -265,9 +287,27 @@ export default function Hero() {
               e.currentTarget.style.transform = 'translateY(0)'
             }}
           >
-            <img src={playstoreBtn} alt="" style={{ height: '30px', width: '30px', objectFit: 'contain', flexShrink: 0 }} />
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1.1 }}>
-              <span style={{ fontSize: '0.65rem', opacity: 0.9, letterSpacing: '0.02em', marginBottom: '2px' }}>
+            <img
+              src={playstoreBtn}
+              alt=""
+              style={{ height: '30px', width: '30px', objectFit: 'contain', flexShrink: 0 }}
+            />
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                lineHeight: 1.1,
+              }}
+            >
+              <span
+                style={{
+                  fontSize: '0.65rem',
+                  opacity: 0.9,
+                  letterSpacing: '0.02em',
+                  marginBottom: '2px',
+                }}
+              >
                 GET IT ON
               </span>
               <span style={{ fontSize: '1.3rem', fontWeight: 600, letterSpacing: '-0.02em' }}>

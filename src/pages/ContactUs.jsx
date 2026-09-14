@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FiMail, FiMessageSquare, FiSend, FiCheckCircle } from 'react-icons/fi'
+import { FiSend, FiCheckCircle, FiMapPin, FiClock } from 'react-icons/fi'
 import whiteLogo from '@/assets/white-logo.png'
 import Footer from '@/components/Footer'
 
@@ -42,8 +42,14 @@ export default function ContactUs() {
   }
 
   return (
-    <div style={{ minHeight: '100vh', background: '#fafafa', fontFamily: 'Inter, system-ui, sans-serif', color: '#111' }}>
-
+    <div
+      style={{
+        minHeight: '100vh',
+        background: '#fafafa',
+        fontFamily: 'Inter, system-ui, sans-serif',
+        color: '#111',
+      }}
+    >
       {/* ── Top Hero Header Card ── */}
       <div style={{ padding: '16px', maxWidth: '1280px', margin: '0 auto' }}>
         <div
@@ -61,7 +67,14 @@ export default function ContactUs() {
           }}
         >
           {/* Top Bar with Brand Logo */}
-          <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start', marginBottom: '4rem' }}>
+          <div
+            style={{
+              width: '100%',
+              display: 'flex',
+              justifyContent: 'flex-start',
+              marginBottom: '4rem',
+            }}
+          >
             <Link
               to="/"
               style={{
@@ -74,11 +87,11 @@ export default function ContactUs() {
             >
               <img
                 src={whiteLogo}
-                alt="Conquer Circles Logo"
+                alt="Techwow Logo"
                 style={{ width: '30px', height: '30px', objectFit: 'contain', display: 'block' }}
               />
               <span style={{ fontSize: '1.05rem', fontWeight: 600, letterSpacing: '-0.015em' }}>
-                Conquer Circles
+                Techwow®
               </span>
             </Link>
           </div>
@@ -106,7 +119,7 @@ export default function ContactUs() {
                 fontWeight: 300,
               }}
             >
-              Have questions, feedback, or need assistance? Reach out to our support team and we will respond promptly.
+              Have questions about a repair booking, mail-in box, or AI valuation? Reach out to our UK team.
             </p>
           </div>
         </div>
@@ -121,16 +134,22 @@ export default function ContactUs() {
           boxSizing: 'border-box',
         }}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', marginBottom: '3.5rem' }}>
-          
-          {/* Direct Email Card */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '2rem',
+            marginBottom: '3.5rem',
+          }}
+        >
+          {/* Registered Office Card */}
           <div
             style={{
               background: '#ffffff',
               borderRadius: '20px',
               padding: '2rem',
-              border: '1px solid #eaeaea',
               boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
+              border: '1px solid #f0f0f0',
               display: 'flex',
               flexDirection: 'column',
               gap: '1rem',
@@ -138,49 +157,41 @@ export default function ContactUs() {
           >
             <div
               style={{
-                width: '46px',
-                height: '46px',
+                width: '44px',
+                height: '44px',
                 borderRadius: '12px',
                 background: '#eef2ff',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: '#4C6FFF',
+                fontSize: '1.25rem',
               }}
             >
-              <FiMail size={22} />
+              <FiMapPin />
             </div>
             <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 600, margin: '0 0 0.35rem 0', color: '#111' }}>
-                Email Support
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111', margin: '0 0 0.25rem 0' }}>
+                Registered Office
               </h3>
-              <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.5, margin: 0 }}>
-                Our direct support inbox for general inquiries, feedback, and assistance.
+              <p style={{ fontSize: '0.88rem', color: '#666', lineHeight: 1.6, margin: 0 }}>
+                TECHWOW LTD
+                <br />
+                05 Leicester Steet, Northwich, England, CW9 5LA
+                <br />
+                <span style={{ fontSize: '0.8rem', color: '#999' }}>Company #13962308 (England & Wales)</span>
               </p>
             </div>
-            <a
-              href="mailto:tanveerok355@gmail.com"
-              style={{
-                fontSize: '1rem',
-                fontWeight: 600,
-                color: '#4C6FFF',
-                textDecoration: 'none',
-                marginTop: 'auto',
-                wordBreak: 'break-all',
-              }}
-            >
-              tanveerok355@gmail.com
-            </a>
           </div>
 
-          {/* Response Hours Card */}
+          {/* Support Hours & Email Card */}
           <div
             style={{
               background: '#ffffff',
               borderRadius: '20px',
               padding: '2rem',
-              border: '1px solid #eaeaea',
               boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
+              border: '1px solid #f0f0f0',
               display: 'flex',
               flexDirection: 'column',
               gap: '1rem',
@@ -188,87 +199,87 @@ export default function ContactUs() {
           >
             <div
               style={{
-                width: '46px',
-                height: '46px',
+                width: '44px',
+                height: '44px',
                 borderRadius: '12px',
-                background: '#f0fdf4',
+                background: '#eef2ff',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                color: '#16a34a',
+                color: '#4C6FFF',
+                fontSize: '1.25rem',
               }}
             >
-              <FiMessageSquare size={22} />
+              <FiClock />
             </div>
             <div>
-              <h3 style={{ fontSize: '1.15rem', fontWeight: 600, margin: '0 0 0.35rem 0', color: '#111' }}>
-                Response Time
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111', margin: '0 0 0.25rem 0' }}>
+                Customer Support
               </h3>
-              <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.5, margin: 0 }}>
-                We review every message carefully. Typical turnaround time is within 24 to 48 business hours.
+              <p style={{ fontSize: '0.88rem', color: '#666', lineHeight: 1.6, margin: 0 }}>
+                Hours: [Monday–Saturday 9am–6pm]
+                <br />
+                Email: [support@techwow.co.uk]
+                <br />
+                Phone: [+44 (0) 800 000 0000]
               </p>
             </div>
-            <span style={{ fontSize: '0.9rem', fontWeight: 600, color: '#16a34a', marginTop: 'auto' }}>
-              Monday – Friday (Global Support)
-            </span>
           </div>
-
         </div>
 
-        {/* ── Form Card ── */}
+        {/* ── Contact Form Section ── */}
         <div
           style={{
             background: '#ffffff',
             borderRadius: '24px',
             padding: '2.5rem',
-            border: '1px solid #eaeaea',
-            boxShadow: '0 6px 30px rgba(0,0,0,0.04)',
-            position: 'relative',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.04)',
+            border: '1px solid #f0f0f0',
           }}
         >
-          <h2 style={{ fontSize: '1.5rem', fontWeight: 600, color: '#111', letterSpacing: '-0.02em', margin: '0 0 0.5rem 0' }}>
-            Send Us a Message
-          </h2>
-          <p style={{ fontSize: '0.95rem', color: '#666', lineHeight: 1.6, margin: '0 0 2rem 0' }}>
-            Fill in your details below and your message will be forwarded directly to our support team.
-          </p>
+          <div style={{ marginBottom: '2rem' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: '#111', margin: '0 0 0.5rem 0' }}>
+              Send Us a Message
+            </h2>
+            <p style={{ fontSize: '0.9rem', color: '#666', margin: 0, lineHeight: 1.5 }}>
+              Fill in the form below and our UK support team will get back to you within 1 business day.
+            </p>
+          </div>
 
           {submitSuccess ? (
             <div
               style={{
+                padding: '2rem',
                 background: '#f0fdf4',
-                border: '1px solid #bbf7d0',
                 borderRadius: '16px',
-                padding: '2.5rem 2rem',
+                border: '1px solid #bbf7d0',
                 textAlign: 'center',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: '1rem',
+                gap: '0.75rem',
               }}
             >
-              <FiCheckCircle size={44} color="#16a34a" />
-              <div>
-                <h3 style={{ fontSize: '1.35rem', fontWeight: 600, color: '#166534', margin: '0 0 0.4rem 0' }}>
-                  Thank you! Your message has been sent.
-                </h3>
-                <p style={{ fontSize: '0.95rem', color: '#15803d', margin: 0, lineHeight: 1.5 }}>
-                  We have received your submission and will get back to you at your email address shortly.
-                </p>
-              </div>
+              <FiCheckCircle style={{ fontSize: '2.5rem', color: '#16a34a' }} />
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 600, color: '#166534', margin: 0 }}>
+                Message Sent Successfully!
+              </h3>
+              <p style={{ fontSize: '0.9rem', color: '#15803d', margin: 0, maxWidth: '400px' }}>
+                Thank you for contacting Techwow. We have received your message and will respond shortly.
+              </p>
               <button
                 type="button"
                 onClick={() => setSubmitSuccess(false)}
                 style={{
-                  marginTop: '0.5rem',
-                  padding: '10px 20px',
-                  borderRadius: '10px',
+                  marginTop: '1rem',
+                  padding: '8px 16px',
                   background: '#16a34a',
                   color: '#ffffff',
                   border: 'none',
-                  fontWeight: 600,
+                  borderRadius: '8px',
                   cursor: 'pointer',
-                  fontSize: '0.9rem',
+                  fontWeight: 500,
+                  fontSize: '0.85rem',
                 }}
               >
                 Send Another Message
@@ -276,133 +287,164 @@ export default function ContactUs() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              <input type="hidden" name="_subject" value="New Contact Form Submission - Conquer Circles" />
-              <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="New Inquiry from Techwow Contact Form" />
 
               {errorMsg && (
                 <div
                   style={{
-                    padding: '12px 16px',
-                    borderRadius: '10px',
+                    padding: '0.75rem 1rem',
                     background: '#fef2f2',
                     border: '1px solid #fecaca',
-                    color: '#b91c1c',
-                    fontSize: '0.9rem',
+                    borderRadius: '8px',
+                    color: '#991b1b',
+                    fontSize: '0.85rem',
                   }}
                 >
                   {errorMsg}
                 </div>
               )}
 
-              {/* Name field */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <label htmlFor="contact-name" style={{ fontSize: '0.9rem', fontWeight: 600, color: '#222' }}>
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="contact-name"
-                  name="name"
-                  required
-                  placeholder="e.g. Alex Morgan"
-                  style={{
-                    padding: '14px 16px',
-                    borderRadius: '12px',
-                    border: '1px solid #dcdcdc',
-                    fontSize: '0.95rem',
-                    outline: 'none',
-                    transition: 'border-color 0.2s',
-                    width: '100%',
-                    boxSizing: 'border-box',
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = '#4C6FFF')}
-                  onBlur={(e) => (e.target.style.borderColor = '#dcdcdc')}
-                />
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                  gap: '1.5rem',
+                }}
+              >
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <label
+                    htmlFor="name"
+                    style={{ fontSize: '0.85rem', fontWeight: 500, color: '#333' }}
+                  >
+                    Your Name *
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="e.g. Sarah Jenkins"
+                    style={{
+                      padding: '12px 14px',
+                      borderRadius: '10px',
+                      border: '1px solid #e2e8f0',
+                      background: '#fafafa',
+                      fontSize: '0.9rem',
+                      color: '#111',
+                      outline: 'none',
+                      fontFamily: 'inherit',
+                    }}
+                  />
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <label
+                    htmlFor="email"
+                    style={{ fontSize: '0.85rem', fontWeight: 500, color: '#333' }}
+                  >
+                    Email Address *
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="sarah@example.co.uk"
+                    style={{
+                      padding: '12px 14px',
+                      borderRadius: '10px',
+                      border: '1px solid #e2e8f0',
+                      background: '#fafafa',
+                      fontSize: '0.9rem',
+                      color: '#111',
+                      outline: 'none',
+                      fontFamily: 'inherit',
+                    }}
+                  />
+                </div>
               </div>
 
-              {/* Email field */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <label htmlFor="contact-email" style={{ fontSize: '0.9rem', fontWeight: 600, color: '#222' }}>
-                  Email Address
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <label
+                  htmlFor="subject"
+                  style={{ fontSize: '0.85rem', fontWeight: 500, color: '#333' }}
+                >
+                  Topic / Inquiry Type
                 </label>
-                <input
-                  type="email"
-                  id="contact-email"
-                  name="email"
-                  required
-                  placeholder="e.g. alex@example.com"
+                <select
+                  id="subject"
+                  name="inquiry_type"
+                  defaultValue="Repair Booking Inquiry"
                   style={{
-                    padding: '14px 16px',
-                    borderRadius: '12px',
-                    border: '1px solid #dcdcdc',
-                    fontSize: '0.95rem',
+                    padding: '12px 14px',
+                    borderRadius: '10px',
+                    border: '1px solid #e2e8f0',
+                    background: '#fafafa',
+                    fontSize: '0.9rem',
+                    color: '#111',
                     outline: 'none',
-                    transition: 'border-color 0.2s',
-                    width: '100%',
-                    boxSizing: 'border-box',
+                    fontFamily: 'inherit',
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = '#4C6FFF')}
-                  onBlur={(e) => (e.target.style.borderColor = '#dcdcdc')}
-                />
+                >
+                  <option>Repair Booking Inquiry</option>
+                  <option>Buy Back / AI Valuation</option>
+                  <option>Prepaid Mail-in Box</option>
+                  <option>Store Accessory Order</option>
+                  <option>Warranty or [X]-Month Guarantee</option>
+                  <option>General Question</option>
+                </select>
               </div>
 
-              {/* Message field */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                <label htmlFor="contact-message" style={{ fontSize: '0.9rem', fontWeight: 600, color: '#222' }}>
-                  Message
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <label
+                  htmlFor="message"
+                  style={{ fontSize: '0.85rem', fontWeight: 500, color: '#333' }}
+                >
+                  Message *
                 </label>
                 <textarea
-                  id="contact-message"
+                  id="message"
                   name="message"
                   required
                   rows={5}
-                  placeholder="Tell us what you need help with..."
+                  placeholder="How can we help with your device today?"
                   style={{
-                    padding: '14px 16px',
-                    borderRadius: '12px',
-                    border: '1px solid #dcdcdc',
-                    fontSize: '0.95rem',
+                    padding: '12px 14px',
+                    borderRadius: '10px',
+                    border: '1px solid #e2e8f0',
+                    background: '#fafafa',
+                    fontSize: '0.9rem',
+                    color: '#111',
                     outline: 'none',
-                    transition: 'border-color 0.2s',
-                    width: '100%',
-                    boxSizing: 'border-box',
                     resize: 'vertical',
                     fontFamily: 'inherit',
                   }}
-                  onFocus={(e) => (e.target.style.borderColor = '#4C6FFF')}
-                  onBlur={(e) => (e.target.style.borderColor = '#dcdcdc')}
-                ></textarea>
+                />
               </div>
 
-              {/* Submit button */}
               <button
                 type="submit"
                 disabled={isSubmitting}
                 style={{
-                  marginTop: '0.5rem',
-                  padding: '15px 24px',
-                  background: isSubmitting ? '#93a4f8' : '#4C6FFF',
+                  padding: '14px 24px',
+                  background: isSubmitting ? '#93c5fd' : '#4C6FFF',
                   color: '#ffffff',
                   border: 'none',
                   borderRadius: '12px',
-                  fontSize: '1rem',
+                  fontSize: '0.95rem',
                   fontWeight: 600,
                   cursor: isSubmitting ? 'not-allowed' : 'pointer',
-                  transition: 'background 0.2s, transform 0.1s',
-                  display: 'inline-flex',
+                  display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '8px',
-                }}
-                onMouseEnter={(e) => {
-                  if (!isSubmitting) e.currentTarget.style.background = '#3b5be0'
-                }}
-                onMouseLeave={(e) => {
-                  if (!isSubmitting) e.currentTarget.style.background = '#4C6FFF'
+                  gap: '0.5rem',
+                  alignSelf: 'flex-start',
+                  transition: 'background 0.2s',
+                  boxShadow: '0 4px 14px rgba(76, 111, 255, 0.25)',
                 }}
               >
-                <FiSend size={18} />
+                <FiSend />
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
@@ -410,7 +452,7 @@ export default function ContactUs() {
         </div>
       </main>
 
-      {/* ── Bottom Footer Bar ── */}
+      {/* Footer */}
       <Footer />
     </div>
   )

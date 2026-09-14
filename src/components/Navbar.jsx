@@ -31,7 +31,7 @@ export default function Navbar() {
 
     window.addEventListener('scroll', updateNavbarState, { passive: true })
     window.addEventListener('resize', updateNavbarState, { passive: true })
-    
+
     // Initial check
     updateNavbarState()
 
@@ -94,7 +94,7 @@ export default function Navbar() {
           onClick={() => {
             window.scrollTo({ top: 0, behavior: 'smooth' })
           }}
-          aria-label="Conquer Circles home"
+          aria-label="Techwow home"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -107,7 +107,7 @@ export default function Navbar() {
           {/* Brand Logo */}
           <img
             src={isScrolled ? blueLogo : whiteLogo}
-            alt="Conquer Circles Logo"
+            alt="Techwow Logo"
             style={{
               width: '32px',
               height: '32px',
@@ -124,7 +124,7 @@ export default function Navbar() {
               letterSpacing: '-0.015em',
             }}
           >
-            Conquer Circles
+            Techwow®
           </span>
         </Link>
       </div>
